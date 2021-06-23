@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_case.py:31 预期结果  除数为0，被除数正常：0/0=除数不能为0
+[32mINFO    [0m root:test_case.py:33 运行结果  除数为0，被除数正常：0/0=除数不能为0

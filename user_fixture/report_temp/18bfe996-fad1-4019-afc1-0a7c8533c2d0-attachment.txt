@@ -1,0 +1,3 @@
+[32mINFO    [0m root:conftest.py:36 开始计算
+[32mINFO    [0m root:test_case.py:20 预期结果  两个正整数相加：1+1=2
+[32mINFO    [0m root:test_case.py:23 运行结果  两个正整数相加：1+1=2

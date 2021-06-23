@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_case.py:31 预期结果  被除数为0，除数为正整数：0/1=0.0
+[32mINFO    [0m root:test_case.py:33 运行结果  被除数为0，除数为正整数：0/1=0.0
