@@ -6,7 +6,6 @@
 from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from appium.webdriver.common.mobileby import MobileBy
-import pytest
 
 import allure
 
