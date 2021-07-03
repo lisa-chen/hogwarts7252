@@ -6,8 +6,9 @@
 from appium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 from appium.webdriver.common.mobileby import MobileBy
-
+import pytest
 import allure
+import os
 
 @allure.feature("企业微信")
 class TestWechat:
@@ -34,6 +35,8 @@ class TestWechat:
         with allure.step("等待页面加载完成，出现指定文案"):
             WebDriverWait(self.driver, 15).until(
                 lambda x: x.find_element(MobileBy.XPATH, "//*[@text='通讯录']"))
+            allure.attach(self.driver.get_screenshot_as_png(), "通讯录页面", allure.attachment_type.PNG)  # 保存截图为allure的附件
+
         self.driver.find_element_by_xpath('//*[@text="通讯录"]').click()
         self.driver.find_element_by_xpath('//*[@text="添加成员"]').click()
         # 手动输入添加
@@ -44,5 +47,16 @@ class TestWechat:
                 '17380120003')
             self.driver.find_element_by_xpath('//*[@text="保存后自动发送邀请通知"]').click()
             self.driver.find_element_by_xpath('//*[@text="保存"]').click()
+            allure.attach(self.driver.get_screenshot_as_png(), "点击保存后页面截图", allure.attachment_type.PNG)  # 保存截图为allure的附件
             self.driver.find_element(MobileBy.XPATH, "//*[@text='添加成功']")
+            allure.attach(self.driver.get_screenshot_as_png(), "点击保存后页面截图", allure.attachment_type.PNG)  # 保存截图为allure的附件
+
         # self.driver.start_activity(".launch.LaunchSplashActivity")
+
+if __name__ == '__main__':
+    pytest.main(["-s", "-v", "--alluredir=report", "test_adduser.py"])
+    # os.system("allure serve "+report_dir_temp)
+    # os.system("allure generate "+report_dir_temp+" --clean -o "+report_dir+" || true && allure report open -o "+report_dir)
+    os.system("allure generate " + 'report' + " -o " + 'report_dir' + " --clean")
+
+
