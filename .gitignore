@@ -1,2 +1,6 @@
 /selenium_1/
 .pytest_cache/
+/selenium_1/
+/user_fixture/.pytest_cache/
+/user_fixture/log/
+/user_fixture/report_temp/
