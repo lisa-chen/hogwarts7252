@@ -35,4 +35,3 @@ class Calculator:
         return num1 / num2
 
 
-Calculator = Calculator()
