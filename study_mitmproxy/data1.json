@@ -1,0 +1,23 @@
+{
+  "code": 100,
+  "msg": {
+    "P_30_33": [
+      {
+        "campaign_type": "normal",
+        "campaign_uuid": "adm_jghdrh7xej73",
+        "cover_img": "",
+        "desc": "投递成功广告图",
+        "extend": "",
+        "hideimg": "https://www.shixiseng.com",
+        "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210318145123ExHf88BjWOdgr5rvwN.png",
+        "material_time": 3,
+        "material_type": "img",
+        "position": 1,
+        "position_id": "P_30_33",
+        "redirect": "https://operation.shixiseng.com/server/preview?ad_id=adm_jghdrh7xej73",
+        "title": "投递成功广告图"
+      }
+    ],
+    "P_5_1": []
+  }
+}

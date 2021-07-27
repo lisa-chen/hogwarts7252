@@ -1,0 +1,32 @@
+{
+  "code": 100,
+  "data": [
+    {
+      "ad_id": "adm_rtmcrvba3w22",
+      "campaign_id": "adm_rtmcrvba3w22",
+      "cover_img": "",
+      "desc": "1",
+      "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210330154004ZBVD99lt93AFGEoc2r.png",
+      "link": "https://operation.shixiseng.com/server/preview?ad_id=adm_rtmcrvba3w22",
+      "link_target": "out",
+      "material_time": 3,
+      "material_type": "img",
+      "position_id": "P_30_32",
+      "title": "开屏广告"
+    },
+    {
+      "ad_id": "adm_rtmcrvba3w22",
+      "campaign_id": "adm_rtmcrvba3w22",
+      "cover_img": "",
+      "desc": "1",
+      "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210330154004ZBVD99lt93AFGEoc2r.png",
+      "link": "https://operation.shixiseng.com/server/preview?ad_id=adm_rtmcrvba3w22",
+      "link_target": "out",
+      "material_time": 3,
+      "material_type": "img",
+      "position_id": "P_30_31",
+      "title": "右下角"
+    }
+
+  ]
+}

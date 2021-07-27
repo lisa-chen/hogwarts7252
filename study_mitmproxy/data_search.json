@@ -1,0 +1,52 @@
+{
+  "msg": {
+    "P_2_1": [
+      {
+        "redirect": "https://operation.shixiseng.com/server/preview?ad_id=adm_j2vrg2floswv",
+        "hideimg": "http://sit1-sxs-web.mshare.cn/user/action?event_type=load&curt_id=348a9f34-edd8-11eb-9e92-7a221166749f&prev_id=&event_info=%7B%22ad_uuid%22%3A%22adm_j2vrg2floswv%22%7D&event=ad_exposure&target=https%3A%2F%2Foperation.shixiseng.com%2Fserver%2Fpreview%3Fad_id%3Dadm_j2vrg2floswv&uuid=&url=&referrer=&uri=&source=pc",
+        "extend": "",
+        "position_id": "P_2_1",
+        "material_type": "video",
+        "material_time": 5,
+        "desc": "",
+        "campaign_type": "normal",
+        "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153152jSMBUUuPYEbLXC7ipw.jpeg",
+        "title": "测试",
+        "campaign_uuid": "adm_j2vrg2floswv",
+        "position": 1,
+        "cover_img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153246XLaatv6NWzmUJnYEar.mp4"
+      },
+      {
+        "redirect": "https://operation.shixiseng.com/server/preview?ad_id=adm_j2vrg2floswv",
+        "hideimg": "http://sit1-sxs-web.mshare.cn/user/action?event_type=load&curt_id=348a9f34-edd8-11eb-9e92-7a221166749f&prev_id=&event_info=%7B%22ad_uuid%22%3A%22adm_j2vrg2floswv%22%7D&event=ad_exposure&target=https%3A%2F%2Foperation.shixiseng.com%2Fserver%2Fpreview%3Fad_id%3Dadm_j2vrg2floswv&uuid=&url=&referrer=&uri=&source=pc",
+        "extend": "",
+        "position_id": "P_2_1",
+        "material_type": "video",
+        "material_time": 5,
+        "desc": "",
+        "campaign_type": "normal",
+        "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153152jSMBUUuPYEbLXC7ipw.jpeg",
+        "title": "测试",
+        "campaign_uuid": "adm_j2vrg2floswv",
+        "position": 2,
+        "cover_img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153246XLaatv6NWzmUJnYEar.mp4"
+      },
+      {
+        "redirect": "https://operation.shixiseng.com/server/preview?ad_id=adm_j2vrg2floswv",
+        "hideimg": "http://sit1-sxs-web.mshare.cn/user/action?event_type=load&curt_id=348a9f34-edd8-11eb-9e92-7a221166749f&prev_id=&event_info=%7B%22ad_uuid%22%3A%22adm_j2vrg2floswv%22%7D&event=ad_exposure&target=https%3A%2F%2Foperation.shixiseng.com%2Fserver%2Fpreview%3Fad_id%3Dadm_j2vrg2floswv&uuid=&url=&referrer=&uri=&source=pc",
+        "extend": "",
+        "position_id": "P_2_1",
+        "material_type": "video",
+        "material_time": 5,
+        "desc": "",
+        "campaign_type": "normal",
+        "img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153152jSMBUUuPYEbLXC7ipw.jpeg",
+        "title": "测试",
+        "campaign_uuid": "adm_j2vrg2floswv",
+        "position": 3,
+        "cover_img": "https://sxsimg.xiaoyuanzhao.com/adservice/image/20210720153246XLaatv6NWzmUJnYEar.mp4"
+      }
+    ]
+  },
+  "code": 100
+}

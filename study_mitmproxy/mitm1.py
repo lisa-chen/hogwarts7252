@@ -3,28 +3,27 @@
 # author:陈林莎
 # datetime:2021/7/14 17:48
 # software: PyCharm
-
+import mitmproxy
 from mitmproxy import ctx
+from mitmproxy import http, ctx
 
 
-class Counter:
-    def __init__(self):
-        self.num = 0
+class MitmSxs:
+    def request(self, flows: mitmproxy.http.HTTPFlow):
+        ctx.log(flows.request.url)
+        if "http://sit1-sxs-web.mshare.cn/" in flows.request \
+                .pretty_url:
+            ctx.log(flows.request.url)
+            ctx.log(flows.response)
 
-    def request(self, flow):
-        self.num = self.num + 1
-        ctx.log.info("We've seen %d flows" % self.num)
-
-class Counter_1:
-    def __init__(self):
-        self.num = 0
-
-    def request(self, flow):
-        self.num = self.num + 1
-        ctx.log.info("哈哈哈 %d flows" % self.num)
 
 # 插件
 # 格式 list ，list中包我们需要使用的实例
 addons = [
-    Counter(),Counter_1()
+    MitmSxs()
 ]
+if __name__ == "__main__":
+    from mitmproxy.tools.main import mitmdump
+
+    # 使用debug模式启动mitmdump
+    mitmdump(['-p', '8888', '-s', __file__])

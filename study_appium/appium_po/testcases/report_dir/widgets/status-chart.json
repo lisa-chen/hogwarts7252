@@ -1,0 +1,31 @@
+[ {
+  "uid" : "a3901f68f6b0f6e9",
+  "name" : "test_Deleteuser",
+  "time" : {
+    "start" : 1625643888254,
+    "stop" : 1625643923704,
+    "duration" : 35450
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ac23dbef11748b9",
+  "name" : "test_adduser",
+  "time" : {
+    "start" : 1625643862268,
+    "stop" : 1625643878205,
+    "duration" : 15937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "861cf7ebcfc896ad",
+  "name" : "test_add_fail",
+  "time" : {
+    "start" : 1625643924504,
+    "stop" : 1625643939307,
+    "duration" : 14803
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

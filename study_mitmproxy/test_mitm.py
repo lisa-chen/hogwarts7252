@@ -25,16 +25,18 @@ class rewrite:
             # ctx.log(str(json_data["msg"]["intern_info"][0]["maxSalary"]))
             # ctx.log(res)
             flow.response.text = res
-            # with open("data.txt","w",encoding='utf-8') as f:
+            # with open("data.json","w",encoding='utf-8') as f:
             #     f.write(res)
             ctx.log(flow.response.text)
 
 
 class Maplocal1:
     def request(self, flow: mitmproxy.http.HTTPFlow):
-        if 'http://wttr.in/Dunedin' in \
+        ctx.log(flow.request.pretty_url)
+        if '/proxy-prefix/new-account-api-host/api/account/v3.0/get/media' in \
                 flow.request.pretty_url:
-            with open("data.txt", "r", encoding='utf-8') as f:
+            with open("data.json", "r", encoding='utf-8') as f:
+                # json_data=json.load(f)
                 flow.response = http.HTTPResponse.make(
                     # 状态码响应
                     200,
@@ -42,10 +44,33 @@ class Maplocal1:
                     f.read(),
 
                 )
+                ctx.log(flow.request.pretty_url)
+        if '/operations/recommend' in \
+                flow.request.pretty_url:
+            with open("data_search.json", "r", encoding='utf-8') as f:
+                # json_data=json.load(f)
+                flow.response = http.HTTPResponse.make(
+                    # 状态码响应
+                    200,
+                    # 数据体
+                    f.read(),
+                )
+                ctx.log(flow.request.pretty_url)
+        if '/server/ad' in \
+                flow.request.pretty_url:
+            with open("data_fuc.json", "r", encoding='utf-8') as f:
+                # json_data=json.load(f)
+                flow.response = http.HTTPResponse.make(
+                    # 状态码响应
+                    200,
+                    # 数据体
+                    f.read(),
+                )
+                ctx.log(flow.request.pretty_url)
 
 
 addons = [
-    rewrite(), Maplocal1()
+    Maplocal1()
 ]
 
 if __name__ == "__main__":
